@@ -1,44 +1,58 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap);
-body
-            {
-                background-color: #1F2232;
-                color: white;
-                font: 1em 'Source Sans Pro', sans-serif;
-                align-content: center;
-                text-align: center;
-            }
-            .button
-            { 
-                background-color: #1F2232;
-                border: none ;
-                border-radius: 5px;
-                font-size: 15px;
-                text-align: center;
-                display: inline-block;
-                margin: 3px 5px;
-                transition-duration: 0.5s;
-                cursor: pointer;
-            }
-            .button-menu
-            {
-                color: #9370DB;
-            }
-            .button-menu:hover
-            {
-                background-color: #B393E8;
-                color: white;
-            }
-            .button-socials
-            {
-                border: none;
-                border-radius: 32px;
-            }
-            .button-socials:hover
-            {
-                background-color: #9370DB;
-            }
-            .content
-            {
-                text-align: justify;
-            }
+body       
+    {
+        background-color: #1F2232;
+        color: white;
+        font: 1em 'Source Sans Pro', sans-serif;
+        align-content: center;
+        text-align: center;
+        margin: 1em 3em;
+    }
+    .button
+    { 
+        background-color: #1F2232;
+        margin: auto;
+        border: none;
+        border-radius: 5px;
+        font-size: 15px;
+        text-align: center;
+        display: inline-block;
+        margin: 3px 5px;
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+    .button-menu
+    {
+        color: #9370DB;
+    }
+    .button-menu:hover
+    {
+        background-color: #B393E8;
+        color: white;
+    }
+    .button-socials
+    {
+        border: none;
+        border-radius: 32px;
+    }
+    .button-socials:hover
+    {
+        background-color: #9370DB;
+    }
+    a:visited
+    {
+        text-decoration: none;
+    }
+    a::after
+    {
+        text-decoration: none;
+    }
+    div#content
+    {
+        text-align: justify;
+    }
+    blockquote
+    {
+        font-style: italic;
+    }
