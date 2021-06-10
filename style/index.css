@@ -1,0 +1,44 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap);
+body       
+    {
+        background-color: #1F2232;
+        color: white;
+        font: 1em 'Source Sans Pro', sans-serif;
+        align-content: center;
+        text-align: center;
+        margin: 1em 3em;
+    }
+    hr
+    {
+        height: 1.5px;
+        background-color: #9370DB;
+        color: #9370DB;
+        border: none;
+    }
+    a
+    {
+        text-decoration: none;
+        color: white;
+    }
+    #content
+    {
+        text-align: justify;
+        padding: 3px;
+    }
+    ul
+    {
+        padding-inline-start: inherit;
+        list-style-type: none;
+    }
+    #texts
+    {
+        padding: 3px 12px;
+        border-radius: 16px;
+        font: 1em 'Monaco', lighter, monospace;
+    }
+    #texts:hover
+    {
+        background-color: #9370DB;
+        transition-duration: 0.5s;
+    }

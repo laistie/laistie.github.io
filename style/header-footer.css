@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.button
+{ 
+    background-color: #1F2232;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    margin: 3px 5px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.button-menu
+{
+    color: #9370DB;
+}
+.button-menu:hover
+{
+    background-color: #B393E8;
+    color: white;
+}
+.button-socials
+{
+    border: none;
+    border-radius: 32px;
+}
+.button-socials:hover
+{
+    background-color: #9370DB;
+}    
+
+footer 
+{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: -200px;
+    margin-bottom: 32px;
+}
