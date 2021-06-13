@@ -1,32 +1,62 @@
 @charset "UTF-8";
+@import url("index.css");
 
 .button
 { 
-    background-color: #1F2232;
-    margin: auto;
+    background-color: var(--black);
     border: none;
-    border-radius: 5px;
+    border-radius: var(--round);
     text-align: center;
+    align-content: center;
     display: inline-block;
-    margin: 3px 5px;
-    transition-duration: 0.5s;
+    margin: var(--menu-margin);
+    transition-duration: var(--timer);
     cursor: pointer;
 }
 .button-menu
 {
-    color: #9370DB;
+    color: var(--purple);
 }
+
 .button-menu:hover
 {
-    background-color: #B393E8;
+    background-color: var(--lilac);
     color: white;
 }
 .button-socials
 {
     border: none;
-    border-radius: 32px;
+    border-radius: var(--round);
 }
 .button-socials:hover
 {
-    background-color: #B393E8;
+    background-color: var(--lilac);
+}
+a > span
+{
+    display: none;
+    font: 1.5em var(--title);
+    letter-spacing: 1.5px;
+}
+a:hover > span
+{
+    display: inline-block;
+    margin-left: 2px;
+    font-weight: bold;
+    vertical-align: super;
+}
+h4
+{
+    font: 1.5em var(--title);
+    margin: var(--menu-margin);
+    letter-spacing: 1.5px;
+}
+#footmark
+{
+    font: var(--footmark);
+    color: rgb(255, 255, 255, 0.3);
+}
+#footmark:hover
+{
+    color: var(--lilac);
 }
