@@ -1,44 +1,90 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 @import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap);
+
+:root
+{
+    --black: #1F2232;
+    --purple: #9370DB;
+    --lilac: #B393E8;
+
+    --title: 'Amatic SC', cursive;
+    --body: 1.2em 'Source Sans Pro', sans-serif;
+    --footmark: italic 0.8em 'Source Sans Pro', sans-serif;
+    
+    --menu-margin: 0.5em;
+    --text-margin: 1em 3em;
+
+    --round: 12px;
+
+    --timer: 0.5s;
+
+    --line: 1.5px solid;
+}
+
 body       
     {
-        background-color: #1F2232;
+        background-color: var(--black);
         color: white;
-        font: 1em 'Source Sans Pro', sans-serif;
+        font: var(--body);
+        margin: var(--text-margin);
         align-content: center;
         text-align: center;
-        margin: 1em 3em;
     }
-    hr
-    {
-        height: 1.5px;
-        background-color: #9370DB;
-        color: #9370DB;
-        border: none;
-    }
-    a
-    {
-        text-decoration: none;
-        color: white;
-    }
-    #content
+    #content , #texts
     {
         text-align: justify;
-        padding: 3px;
+    }
+    h1
+    {
+        font: 2.5em var(--title);
+        padding-bottom: 0.5em;
+        border-bottom: var(--line) var(--purple);
+    }
+    h2
+    {
+        font: 1.7em var(--title);
+        padding-left: 0;
+        border-radius: var(--round);
+    }
+    mark
+    {
+        background-color: var(--lilac);
+        padding: 0.1em;
+        border-radius: var(--round) ;    
+    }
+    mark:hover
+    {
+        color: white;
+        transition-duration: var(--timer);
+    }
+    p
+    {
+        margin-left: 0.2em;
+        padding: 0;
     }
     ul
     {
-        padding-inline-start: inherit;
+        padding: 0;
         list-style-type: none;
     }
     #texts
     {
-        padding: 3px 12px;
-        border-radius: 16px;
-        font: 1em 'Monaco', lighter, monospace;
+        padding: 0.1em;
+        border-radius: var(--round);
+        background-color: var(--lilac);
     }
-    #texts:hover
+    a
     {
-        background-color: #9370DB;
-        transition-duration: 0.5s;
+        text-decoration: none;
+        color: var(--black);
+    }
+    a > h3 , a > p
+    {
+        margin: 0.5em;
+    }
+    a:hover
+    {
+        transition-duration: var(--timer);
+        color: white;
     }
