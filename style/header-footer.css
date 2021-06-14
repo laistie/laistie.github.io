@@ -4,21 +4,21 @@
 .button
 { 
     background-color: var(--black);
-    border: none;
     border-radius: var(--round);
+    padding: var(--padding);
     text-align: center;
     align-content: center;
     display: inline-block;
-    margin: var(--menu-margin);
+    margin: var(--margin-menu);
     transition-duration: var(--timer);
     cursor: pointer;
 }
-.button-menu
+.button-nav
 {
     color: var(--purple);
 }
 
-.button-menu:hover
+.button-nav:hover
 {
     background-color: var(--lilac);
     color: white;
@@ -35,10 +35,10 @@
 a > span
 {
     display: none;
-    font: 1.5em var(--title);
+    font: 1em var(--title);
     letter-spacing: 1.5px;
 }
-a:hover > span
+a:hover > span 
 {
     display: inline-block;
     margin-left: 2px;
@@ -48,8 +48,12 @@ a:hover > span
 h4
 {
     font: 1.5em var(--title);
-    margin: var(--menu-margin);
+    margin: var(--margin-menu);
     letter-spacing: 1.5px;
+}
+footer
+{
+    margin: var(--margin-footer)
 }
 #footmark
 {
