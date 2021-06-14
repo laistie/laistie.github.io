@@ -1,0 +1,84 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap);
+
+:root
+{
+    --black: #1F2232;
+    --gray: rgb(0, 0, 0, 0.5);
+
+    --font: 1.1em 'Source Sans Pro', sans-serif;
+    --font-s: 0.9em;
+    
+    --indent: 3em;
+
+    --margin-text: 1em 3em;
+
+    --padding: 0.1em;
+
+    --line: 0.05em solid;
+}
+body
+{
+    font: var(--font);
+    margin: 0;
+}
+#header
+{
+    background-color: var(--black);
+    color: white;
+    padding: var(--padding);
+    text-indent: var(--indent);
+}
+main
+{
+    margin: var(--margin-text);
+}
+.info
+{
+    float: left;
+    width: 25%;
+}
+.exp
+{
+    float: right;
+    width: 70%;
+}
+h2, h3
+{
+    padding-bottom: var(--padding);
+    border-bottom: var(--line) var(--black);
+}
+ul
+{
+    list-style-type: none;
+    padding: 0;
+}
+#contact > li
+{
+    font-size: var(--font-s);
+    display: inline-block;
+    vertical-align: super;
+    text-decoration: underline;
+}
+#contact:hover > li
+{
+    color: var(--gray);
+}
+table
+{
+    width: 100%;
+}
+td
+{
+    width: 33.3%;
+}
+.type
+{
+    text-align: center;
+}
+.period
+{
+    font-size: var(--font-s);
+    text-align: center;
+    color: var(--gray);
+}
