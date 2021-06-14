@@ -12,79 +12,82 @@
     --body: 1.2em 'Source Sans Pro', sans-serif;
     --footmark: italic 0.8em 'Source Sans Pro', sans-serif;
     
-    --menu-margin: 0.5em;
-    --text-margin: 1em 3em;
+    --margin-menu: 0.5em;
+    --margin-text: 1em 3em;
+    --margin-footer: 2em;
 
-    --round: 12px;
+    --padding: 0.1em;
+
+    --round: 9px;
 
     --timer: 0.5s;
 
-    --line: 1.5px solid;
+    --line: 0.01em solid;
 }
 
 body       
-    {
-        background-color: var(--black);
-        color: white;
-        font: var(--body);
-        margin: var(--text-margin);
-        align-content: center;
-        text-align: center;
-    }
-    #content , #texts
-    {
-        text-align: justify;
-    }
-    h1
-    {
-        font: 2.5em var(--title);
-        padding-bottom: 0.5em;
-        border-bottom: var(--line) var(--purple);
-    }
-    h2
-    {
-        font: 1.7em var(--title);
-        padding-left: 0;
-        border-radius: var(--round);
-    }
-    mark
-    {
-        background-color: var(--lilac);
-        padding: 0.1em;
-        border-radius: var(--round) ;    
-    }
-    mark:hover
-    {
-        color: white;
-        transition-duration: var(--timer);
-    }
-    p
-    {
-        margin-left: 0.2em;
-        padding: 0;
-    }
-    ul
-    {
-        padding: 0;
-        list-style-type: none;
-    }
-    #texts
-    {
-        padding: 0.1em;
-        border-radius: var(--round);
-        background-color: var(--lilac);
-    }
-    a
-    {
-        text-decoration: none;
-        color: var(--black);
-    }
-    a > h3 , a > p
-    {
-        margin: 0.5em;
-    }
-    a:hover
-    {
-        transition-duration: var(--timer);
-        color: white;
-    }
+{
+    background-color: var(--black);
+    color: white;
+    font: var(--body);
+    margin: var(--margin-text);
+    align-content: center;
+    text-align: center;
+}
+#content , #texts
+{
+    text-align: justify;
+}
+h1
+{
+    font: 2.5em var(--title);
+    padding-bottom: var(--padding);
+    border-bottom: var(--line) var(--purple);
+}
+h2
+{
+    font: 1.7em var(--title);
+    padding-left: 0;
+    border-radius: var(--round);
+}
+mark
+{
+    background-color: var(--lilac);
+    padding: var(--padding);
+    border-radius: var(--round) ;    
+}
+mark:hover
+{
+    color: white;
+    transition-duration: var(--timer);
+}
+p
+{
+    margin-left: 0.2em;
+    padding: 0;
+}
+ul
+{
+    padding: 0;
+    list-style-type: none;
+}
+#texts
+{
+    padding: var(--padding);
+    border-radius: var(--round);
+    background-color: var(--lilac);
+}
+a
+{
+    text-decoration: none;
+    color: var(--black);
+}
+a > h3 , a > p
+{
+    margin: 0.5em;
+}
+a:hover
+{
+    transition-duration: var(--timer);
+    color: white;
+}
