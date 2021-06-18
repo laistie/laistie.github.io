@@ -10,7 +10,9 @@
 
     --title: 'Amatic SC', cursive;
     --body: 1.2em 'Source Sans Pro', sans-serif;
+    --body-responsive: 0.8em 'Source Sans Pro', sans-serif;
     --footmark: italic 0.8em 'Source Sans Pro', sans-serif;
+    --footmark-responsive: 0.6em 'Source Sans Pro', sans-serif;
     
     --margin-menu: 0.5em;
     --margin-text: 1em 3em;
@@ -90,4 +92,20 @@ a:hover
 {
     transition-duration: var(--timer);
     color: white;
+}
+
+@media (max-width: 768px)
+{
+    body
+    {
+        font: var(--body-responsive)
+    }
+    h1
+    {
+        font: 2em var(--title)
+    }
+    h2
+    {
+        font: 1.5em var(--title)
+    }
 }
