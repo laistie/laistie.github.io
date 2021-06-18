@@ -7,8 +7,10 @@
     --gray: rgb(0, 0, 0, 0.5);
 
     --font: 1.1em 'Source Sans Pro', sans-serif;
+    --font-responsive: 0.5em 'Source Sans Pro', sans-serif;
     --font-s: 0.9em;
-    
+    --font-s-responsive: 0.7em;
+
     --indent: 3em;
 
     --margin-text: 1em 3em;
@@ -81,4 +83,16 @@ td
     font-size: var(--font-s);
     text-align: center;
     color: var(--gray);
+}
+
+@media (max-width: 768px)
+{
+    body
+    {
+        font: var(--font-responsive);
+    }
+    .period
+    {
+    font-size: var(--font-s-responsive);
+    }
 }
