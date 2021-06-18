@@ -64,3 +64,15 @@ footer
 {
     color: var(--lilac);
 }
+
+@media (max-width: 768px)
+{
+     h4
+    {
+        font: 1em var(--title)
+    }
+    #footmark 
+    {
+        font: var(--footmark-responsive)
+    }
+}
