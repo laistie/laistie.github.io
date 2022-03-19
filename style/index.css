@@ -1,14 +1,15 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 @import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
-:root
-{
+:root{
     --black: #1F2232;
     --purple: #9370DB;
     --lilac: #B393E8;
 
     --title: 'Amatic SC', cursive;
+    --texts: 0.9em 'Special Elite', cursive;
     --body: 1.2em 'Source Sans Pro', sans-serif;
     --body-responsive: 0.8em 'Source Sans Pro', sans-serif;
     --footmark: italic 0.8em 'Source Sans Pro', sans-serif;
@@ -19,93 +20,83 @@
     --margin-footer: 2em;
 
     --padding: 0.1em;
+    --padding2: 0.5em;
 
     --round: 9px;
 
     --timer: 0.5s;
 
     --line: 0.01em solid;
+
+    --letter-spacing: 1.5px;
+    --line-height: 1.5em;
 }
 
-body       
-{
+body{
     background-color: var(--black);
     color: white;
     font: var(--body);
     margin: var(--margin-text);
     align-content: center;
     text-align: center;
+    line-height: var(--line-height);
 }
-#content , #texts
-{
+#content , #texts{
     text-align: justify;
 }
-h1
-{
+h1{
     font: 2.5em var(--title);
     padding-bottom: var(--padding);
-    border-bottom: var(--line) var(--purple);
+    border-bottom: var(--line) var(--lilac);
 }
-h2
-{
+h2{
     font: 1.7em var(--title);
     padding-left: 0;
     border-radius: var(--round);
 }
-mark
-{
+mark{
     background-color: var(--lilac);
     padding: var(--padding);
     border-radius: var(--round) ;    
 }
-mark:hover
-{
+mark:hover{
     color: white;
     transition-duration: var(--timer);
 }
-p
-{
+p{
     margin-left: 0.2em;
     padding: 0;
 }
-ul
-{
+ul{
     padding: 0;
     list-style-type: none;
 }
-#texts
-{
+#texts{
     padding: var(--padding);
     border-radius: var(--round);
     background-color: var(--lilac);
+    font: var(--texts);
 }
-a
-{
+a{
     text-decoration: none;
-    color: var(--black);
 }
-a > h3 , a > p
-{
+a > h3, a > p{
+    color: var(--black);
     margin: 0.5em;
 }
-a:hover
-{
+a > h3:hover{
     transition-duration: var(--timer);
     color: white;
 }
 
-@media (max-width: 768px)
-{
-    body
-    {
+@media (max-width: 768px){
+    body{
         font: var(--body-responsive)
     }
-    h1
-    {
+    h1{
         font: 2em var(--title)
     }
-    h2
-    {
+    h2{
         font: 1.5em var(--title)
     }
 }
