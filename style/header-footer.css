@@ -1,8 +1,26 @@
 @charset "UTF-8";
 @import url("index.css");
 
-.button
-{ 
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: var(--letter-spacing);
+}
+nav > a{
+    text-decoration: none;
+    color: white;
+    font: 1.2em var(--title);
+    padding: var(--padding2);
+    border-bottom: var(--line) var(--lilac);
+}
+nav > a:hover{
+    color: var(--lilac);
+    transition-duration: var(--timer);
+}
+
+.button{ 
     background-color: var(--black);
     border-radius: var(--round);
     padding: var(--padding);
@@ -13,66 +31,35 @@
     transition-duration: var(--timer);
     cursor: pointer;
 }
-.button-nav
-{
-    color: var(--purple);
-}
-
-.button-nav:hover
-{
-    background-color: var(--lilac);
-    color: white;
-}
-.button-socials
-{
+.button-socials{
     border: none;
     border-radius: var(--round);
 }
-.button-socials:hover
-{
+.button-socials:hover{
     background-color: var(--lilac);
 }
-a > span
-{
-    display: none;
-    font: 1em var(--title);
-    letter-spacing: 1.5px;
-}
-a:hover > span 
-{
-    display: inline-block;
-    margin-left: 2px;
-    font-weight: bold;
-    vertical-align: super;
-}
-h4
-{
+h4{
+    align-self: center;
     font: 1.5em var(--title);
     margin: var(--margin-menu);
-    letter-spacing: 1.5px;
+    letter-spacing: var(--letter-spacing);
 }
-footer
-{
-    margin: var(--margin-footer)
+footer{
+    margin: var(--margin-footer);
 }
-#footmark
-{
+#footmark{
     font: var(--footmark);
     color: rgb(255, 255, 255, 0.3);
 }
-#footmark:hover
-{
+#footmark:hover{
     color: var(--lilac);
 }
 
-@media (max-width: 768px)
-{
-     h4
-    {
+@media (max-width: 768px){
+     h4{
         font: 1em var(--title)
     }
-    #footmark 
-    {
+    #footmark {
         font: var(--footmark-responsive)
     }
 }
