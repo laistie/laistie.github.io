@@ -12,15 +12,17 @@
     --texts: 0.9em 'Special Elite', cursive;
     --body: 1.2em 'Source Sans Pro', sans-serif;
     --body-responsive: 0.8em 'Source Sans Pro', sans-serif;
+    --suggestion: 0.8em 'Source Sans Pro', sans-serif;
     --footmark: italic 0.8em 'Source Sans Pro', sans-serif;
     --footmark-responsive: 0.6em 'Source Sans Pro', sans-serif;
     
     --margin-menu: 0.5em;
-    --margin-text: 1em 3em;
+    --margin-text: 1em 5em;
     --margin-footer: 2em;
 
     --padding: 0.1em;
-    --padding2: 0.5em;
+    --padding2: 15em;
+    --padding-nav: 0.5em;
 
     --round: 9px;
 
@@ -36,13 +38,16 @@ body{
     background-color: var(--black);
     color: white;
     font: var(--body);
-    margin: var(--margin-text);
     align-content: center;
     text-align: center;
     line-height: var(--line-height);
+    position: relative;
+    min-height: 100vh;
 }
-#content , #texts{
+#content{
     text-align: justify;
+    margin: var(--margin-text);
+    padding-bottom: var(--padding2);
 }
 h1{
     font: 2.5em var(--title);
@@ -54,6 +59,20 @@ h2{
     padding-left: 0;
     border-radius: var(--round);
 }
+.name{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.name > h2{
+    font: 3em var(--title);
+}
+.pic{
+    margin-right: var(--margin-footer);
+    float: right;
+}
 mark{
     background-color: var(--lilac);
     padding: var(--padding);
@@ -64,6 +83,7 @@ mark:hover{
     transition-duration: var(--timer);
 }
 p{
+    line-height: var(--line-height);
     margin-left: 0.2em;
     padding: 0;
 }
@@ -71,32 +91,32 @@ ul{
     padding: 0;
     list-style-type: none;
 }
-#texts{
+.text{
     padding: var(--padding);
     border-radius: var(--round);
-    background-color: var(--lilac);
     font: var(--texts);
+    margin-bottom: var(--margin-menu);
 }
-a{
+.text > a{
     text-decoration: none;
-}
-a > h3, a > p{
-    color: var(--black);
-    margin: 0.5em;
-}
-a > h3:hover{
-    transition-duration: var(--timer);
     color: white;
 }
+a > h3:hover, a > p:hover{
+    transition-duration: var(--timer);
+    color: var(--lilac);
+}
 
-@media (max-width: 768px){
+@media (max-width: 640px){
+    .name{
+        height: 50vh;
+    }
     body{
-        font: var(--body-responsive)
+        font: var(--body-responsive);
     }
     h1{
-        font: 2em var(--title)
+        font: 2em var(--title);
     }
     h2{
-        font: 1.5em var(--title)
+        font: 1.5em var(--title);
     }
 }
