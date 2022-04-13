@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">  
+<html lang="en">  
     <head>
         <meta charset = "UTF-8">
         <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
@@ -7,13 +7,14 @@
         <link rel = "shortcut icon" href = "images/icon.ico" type = "image/x-icon">
         <title> Laís Tie </title>
         <link rel = "stylesheet" href = "style/index.css">
+        <link rel = "stylesheet" href = "style/form.css">
         <link rel = "stylesheet" href = "style/header-footer.css">
     </head>
     
     <body>
         <header>
             <nav>
-                <a href = "index.html" target = "_self" rel = next> home </a>
+                <a class = "current" href = "index.html" target = "_self" rel = next> home </a>
                 <a href = "curriculum.html" target = "_blank" rel = next> curriculum </a> 
                 <a href = "projects.html" target = "_self" rel = next> projects </a>
                 <a href = "posts.html" target = "_self" rel = next > posts </a>
@@ -22,30 +23,40 @@
         
         <main>
             <div id = "content">
-                <h1> welcome </h1>
-                <h2> <mark> what's this? </mark> </h2>
-                <p> The main purpose of this website is to develop my coding skills, although its content, as for now, won't be focused on formal projects; but if you want to check some of my university projects, you should take a look at my github profile, which is linked down below the socials section. </p>
+                <div class = "name">
+                    <h2> Laís Tie Takaki </h2>
+                    <picture>
+                        <source srcset = "images/glaceonS.ico" media = "(max-width: 640px)">
+                        <source srcset = "images/glaceonM.ico" media = "(max-width: 1007px)">
+                        <img srcset = "images/glaceonL.ico" alt = "glaceon">
+                    </picture>
+                </div>
+                <div class = "content">
+                    <h1> welcome </h1>
+                    <div class = "description">
+                        <h2> <mark> what's this? </mark> </h2>
+                            <p> The main purpose of this website is to develop my coding skills, although its content, as for now, won't be focused on formal projects; but if you want to check some of my university projects, you should take a look at my github profile, which is linked down below the socials section. </p>
+                        <h2> <mark> about me </mark> </h2>
+                            <p> I'm a 2nd semester undergraduate student at Universidade Estadual de Londrina (UEL). </p>
+                            <p> I'm very keen on learning new languages and I'm currently learning korean. </p>
+                            <p> I do enjoy - maybe more than I should - developing design projects such as this website, but due to university I don't update it so frequently and I also have the feeling I don't have much to put in here right now :/ </p>
+                    </div>
+                </div>
+            </div>
+            <div id = "socials">
+                <h4> socials </h4>
+                <ul>
+                <li class = "button button-socials">
+                    <a href = "https://github.com/laistie" target = "_blank" rel = external> <img src = "images/github.ico"> </a>
+                </li>
+                <li class = "button button-socials">
+                    <a href = "https://www.instagram.com/aeiltsi/" target = "_blank" rel = external> <img src = "images/instagram.ico"> </a>
+                </li>
+                <li class = "button button-socials">
+                    <a href = "https://www.linkedin.com/in/la%C3%ADs-tie-takaki-326160235" target = "_blank" rel = external> <img src = "images/linkedin.ico"> </a>
+                </li>
+                </ul>
             </div>
         </main>
-        
-        <footer>
-        <div id = "socials">
-            <h4> socials </h4>
-            <ul>
-            <li class = "button button-socials">
-                <a href = "https://github.com/laistie" target = "_blank" rel = external> <img src = "images/github.ico"> </a>
-            </li>
-            <li class = "button button-socials">
-                <a href = "https://www.instagram.com/aeiltsi/" target = "_blank" rel = external> <img src = "images/instagram.ico"> </a>
-            </li>
-            <li class = "button button-socials">
-                <a href = "https://www.linkedin.com/in/la%C3%ADs-tie-takaki-326160235" target = "_blank" rel = external> <img src = "images/linkedin.ico"> </a>
-            </li>
-            </ul>
-        </div>
-        <div id = "footmark">
-            <p> by @laistie </p>
-        </div>
-        </footer>
     </body>
 </html>
