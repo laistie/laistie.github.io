@@ -18,10 +18,10 @@ nav > a{
     font: var(--nav);
     padding: var(--padding-nav);
     border-bottom: var(--line) var(--lilac);
+    transition: var(--timer);
 }
 nav > a:hover{
     color: var(--lilac);
-    transition-duration: var(--timer);
 }
 a.current{
     color: var(--lilac);
@@ -40,6 +40,7 @@ a.current{
 .button-socials{
     border: none;
     border-radius: var(--round);
+    transition: var(--timer);
 }
 .button-socials:hover{
     background-color: var(--lilac);
