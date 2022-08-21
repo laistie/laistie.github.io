@@ -88,6 +88,12 @@ ul{
     padding: 0;
     list-style-type: none;
 }
+a{    
+    transition: var(--timer);
+}
+a > h3:hover, a > p:hover{
+    color: var(--lilac);
+}
 .text{
     padding: var(--padding);
     border-radius: var(--round);
@@ -97,11 +103,9 @@ ul{
     text-decoration: none;
     color: white;
 }
-a{    
+
+a > h3{
     transition: var(--timer);
-}
-a > h3:hover, a > p:hover{
-    color: var(--lilac);
 }
 
 @media (max-width: 640px){

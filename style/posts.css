@@ -1,6 +1,5 @@
 @charset "UTF-8";
-@import url(https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap);
-@import url('https://fonts.googleapis.com/css2?family=Tillana:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 :root
 {
@@ -8,15 +7,15 @@
     --purple: #9370DB;
     --lilac: #B393E8;
 
-    --header: 0.7em 'Tillana', cursive;
-    --text: 1em 'Merriweather Sans', sans-serif;
-    --text-responsive: 0.5em 'Merriweather Sans', sans-serif;
+    --header: 0.7em 'Source Sans Pro', sans-serif;
+    --text: 1.2em 'Source Sans Pro', sans-serif;
+    --text-responsive: 0.7em 'Source Sans Pro', sans-serif;
     --padding: 2em 4em;
     --padding-table: 1em 1em;
     --indent: 3em;
 
     --margin-align: 2em;
-    --margin-text: 1em 9em;
+    --margin-text: 1em 12em;
     --margin-responsive: 1em 3em;
     
     --round: 9px;
