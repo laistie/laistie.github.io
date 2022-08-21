@@ -1,5 +1,5 @@
-# my website
+# My website ❀
 
-contains some texts written by me and more about myself.
+Contains some texts written by me and more about myself.
 
-check out my website on https://laistie.github.io/
+You can check it out on https://laistie.github.io/
