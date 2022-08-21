@@ -9,10 +9,13 @@ header{
     letter-spacing: var(--letter-spacing);
     margin: var(--margin-text);
 }
+nav{
+    margin-bottom: var(--margin-footer);
+}
 nav > a{
     text-decoration: none;
     color: white;
-    font: 1.2em var(--title);
+    font: var(--nav);
     padding: var(--padding-nav);
     border-bottom: var(--line) var(--lilac);
 }
@@ -49,13 +52,19 @@ a.current{
 }
 h4{
     align-self: center;
-    font: 1.5em var(--title);
+    font: var(--nav);
     margin: var(--margin-menu);
     letter-spacing: var(--letter-spacing);
 }
 
 @media (max-width: 768px){
-     h4{
+    header{
+        margin: var(--margin-responsive);
+    }
+    nav{
+        font: var(--nav-responsive);
+    }
+    h4{
         font: 1em var(--title)
     }
     #footmark {
