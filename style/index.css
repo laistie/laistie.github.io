@@ -44,7 +44,7 @@ body{
     text-align: center;
     line-height: var(--line-height);
     position: relative;
-    min-height: 100vh;
+    min-height: 95vh;
 }
 #content{
     text-align: justify;
@@ -85,6 +85,7 @@ p{
     padding: 0;
 }
 ul{
+    margin: 0;
     padding: 0;
     list-style-type: none;
 }
@@ -97,7 +98,6 @@ a:hover{
     color: var(--lilac);
 }
 .text{
-    padding: var(--padding);
     border-radius: var(--round);
     margin-bottom: var(--margin-menu);
 }
