@@ -90,7 +90,7 @@ td{
 }
 #download-link{
     left: 85%;
-    position: absolute;
+    position: fixed;
     margin-bottom: var(--margin-responsive);
     bottom: 0;
 }
@@ -119,5 +119,8 @@ td{
     }
     .period{
         font-size: var(--font-s-responsive);
+    }
+    #download-link{
+        display: none;
     }
 }
