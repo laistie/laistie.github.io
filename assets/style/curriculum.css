@@ -5,16 +5,16 @@
     --black: #1F2232;
     --gray: rgb(0, 0, 0, 0.5);
 
-    --font: 1.1em 'Source Sans Pro', sans-serif;
+    --font: 1em 'Source Sans Pro', sans-serif;
     --font-responsive: 0.9em 'Source Sans Pro', sans-serif;
-    --font-s: 1em 'Source Sans Pro', sans-serif;
+    --font-s: 0.9em 'Source Sans Pro', sans-serif;
     --font-s-responsive: 1em;
 
     --indent: 3em;
 
     --margin: 1em 12em;
     --margin-responsive: 1em;
-    --margin-list: 3em;
+    --margin-default: 2em;
     --margin-ls-responsive: 0 1.7em;
 
     --padding: 0.1em;
@@ -39,22 +39,19 @@ h1{
     margin: var(--margin);
 }
 li{
-    margin-right: var(--margin-list);
+    margin-right: var(--margin-default);
 }
 .info{
     float: left;
     width: 25%;
-    margin-left: var(--margin-list);
+    margin-left: var(--margin-default);
 }
 .exp{
     float: right;
     width: 70%;
-    margin-left: var(--margin-list);
+    margin-left: var(--margin-default);
 }
-.exp > li{
-    align-content: center;
-}
-h2, h3{
+h3{
     padding-bottom: var(--padding);
     border-bottom: var(--line) var(--black);
 }
@@ -71,28 +68,29 @@ ul{
 #contact:hover > li{
     color: var(--gray);
 }
-table{
-    width: 100%;
+.item{
+    margin-bottom: var(--margin-default);
 }
-td{
-    width: 33.3%;
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.exp{
-    margin-right: var(--margin-list);
+h4, .period, .place{
+    margin: 0;
 }
-.type{
-    text-align: center;
-}
-.period{
-    font-size: var(--font-s);
-    text-align: center;
+.period, .place{
+    font: var(--font-s);
     color: var(--gray);
 }
+.description{
+    margin-top: 0.5em;
+    text-align: justify;
+}
 #download-link{
-    left: 85%;
-    position: fixed;
     margin-bottom: var(--margin-responsive);
-    bottom: 0;
+    float: right;
+    margin: 2em 12em 2em 0;
 }
 
 @media (max-width: 640px){
@@ -105,8 +103,6 @@ td{
     }
     #content{
         margin: var(--margin-responsive);
-    }
-    #content{
         flex-direction: column;
     }
     .info{
