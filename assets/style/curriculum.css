@@ -5,7 +5,7 @@
     --black: #1F2232;
     --gray: rgb(0, 0, 0, 0.5);
 
-    --font: 1em 'Source Sans Pro', sans-serif;
+    --font: 1.1em 'Source Sans Pro', sans-serif;
     --font-responsive: 0.9em 'Source Sans Pro', sans-serif;
     --font-s: 0.9em 'Source Sans Pro', sans-serif;
     --font-s-responsive: 0.8em;
@@ -32,7 +32,7 @@ body{
     text-indent: var(--indent);
 }
 h1{
-    margin-left: 8em;
+    margin-left: 7.2em;
 }
 #content{
     display: flex;
