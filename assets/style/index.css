@@ -12,6 +12,7 @@
     --nav-responsive: 0.7em 'Source Sans Pro', sans-serif;
     --body: 1.2em 'Source Sans Pro', sans-serif;
     --body-responsive: 0.8em 'Source Sans Pro', sans-serif;
+    --text-link: 0.9em 'Source Code Pro', sans-serif;
     --suggestion: 0.8em 'Source Sans Pro', sans-serif;
     --footmark: italic 0.8em 'Source Sans Pro', sans-serif;
     --footmark-responsive: 0.6em 'Source Sans Pro', sans-serif;
@@ -98,6 +99,7 @@ a:hover{
     color: var(--lilac);
 }
 .text{
+    font: var(--text-link);
     border-radius: var(--round);
     margin-bottom: var(--margin-menu);
 }
