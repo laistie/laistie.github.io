@@ -100,13 +100,23 @@ a:hover{
 }
 .text{
     font: var(--text-link);
-    border-radius: var(--round);
     margin-bottom: var(--margin-menu);
 }
 .text > a{
     color: white;
 }
-
+.short{
+    display: flex;
+    width: 100%;
+}
+.short-date{
+    margin-top: 0;
+    color: var(--lilac);
+}
+.short-text{
+    margin-top: 0;
+    margin-left: var(--margin-footer);
+}
 a > h3{
     transition: var(--timer);
 }
