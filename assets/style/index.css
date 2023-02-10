@@ -8,8 +8,9 @@
     --lilac: #B393E8;
 
     --title: 'Source Code Pro', monospace;
+    --title-reponsive: 2em 'Source Code Pro', monospace;
     --nav: 1.2em 'Source Code Pro', monospace;
-    --nav-responsive: 0.7em 'Source Sans Pro', sans-serif;
+    --nav-responsive: 0.9em 'Source Sans Pro', sans-serif;
     --body: 1.2em 'Source Sans Pro', sans-serif;
     --body-responsive: 0.8em 'Source Sans Pro', sans-serif;
     --text-link: 0.9em 'Source Code Pro', sans-serif;
@@ -20,9 +21,12 @@
     --margin-menu: 0.5em;
     --margin-text: 1em 12em;
     --margin-responsive: 1em 2em;
-    --margin-footer: 2em;
+    --margin2: 2em;
+    --margin3: 3em;
+    --margin5: 5em;
 
     --padding: 0.1em;
+    --padding1: 1em;
     --padding2: 15em;
     --padding3: 5em 0 5em 5em;
     --padding-nav: 0.5em;
@@ -36,7 +40,6 @@
     --letter-spacing: 1.5px;
     --line-height: 1.5em;
 }
-
 body{
     background-color: var(--black);
     color: white;
@@ -115,7 +118,7 @@ a:hover{
 }
 .short-text{
     margin-top: 0;
-    margin-left: var(--margin-footer);
+    margin-left: var(--margin2);
 }
 a > h3{
     transition: var(--timer);
@@ -127,7 +130,14 @@ a > h3:hover{
 
 @media (max-width: 640px){
     .name{
+        flex-direction: column-reverse;
         height: 50vh;
+    }
+    .name > h2{
+        font: var(--title-reponsive);
+    }
+    .name > picture{
+        padding: var(--padding-nav);
     }
     body{
         font: var(--body-responsive);

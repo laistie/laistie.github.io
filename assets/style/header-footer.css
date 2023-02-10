@@ -10,7 +10,10 @@ header{
     margin: var(--margin-text);
 }
 nav{
-    margin-bottom: var(--margin-footer);
+    background-color: var(--black);
+    padding: var(--padding1);
+    position: fixed;
+    width: 100%;
 }
 nav > a{
     text-decoration: none;
@@ -60,9 +63,10 @@ h4{
 
 @media (max-width: 768px){
     header{
-        margin: var(--margin-responsive);
+        margin: var(--margin3);
     }
     nav{
+        top: 0;
         font: var(--nav-responsive);
     }
     h4{
