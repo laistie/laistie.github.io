@@ -11,12 +11,13 @@
     --title: 'Source Code Pro', monospace;
     --title-reponsive: 2em 'Source Code Pro', monospace;
     --nav: 1.2em 'Source Code Pro', monospace;
-    --nav-responsive: 0.9em 'Source Sans Pro', sans-serif;
+    --nav-responsive: 0.7em 'Source Sans Pro', sans-serif;
     --body: 1.2em 'Source Sans Pro', sans-serif;
     --body-responsive: 0.8em 'Source Sans Pro', sans-serif;
     --text-link: 0.9em 'Source Code Pro', sans-serif;
     --suggestion: 0.8em 'Source Sans Pro', sans-serif;
     --card-text: 0.8em 'Source Sans Pro', sans-serif;
+    --card-text-responsive: 0.5em 'Source Sans Pro', sans-serif;
     --footmark: italic 0.8em 'Source Sans Pro', sans-serif;
     --footmark-responsive: 0.6em 'Source Sans Pro', sans-serif;
     
@@ -91,7 +92,7 @@ h2{
     font: 3em var(--title);
 }
 
-picture{
+.pic{
     padding: var(--padding3)
 }
 
@@ -184,7 +185,7 @@ a > h3:hover{
     width: 350px;
     box-sizing: border-box;
     position: absolute;
-    bottom: 290px;
+    bottom: 45vh;
     background-color: var(--black-rbg-75);
     transition: var(--timer);
 }
@@ -209,17 +210,6 @@ a > h3:hover{
 }
 
 @media (max-width: 640px){
-    .name{
-        flex-direction: column-reverse;
-        height: 50vh;
-    }
-    .name > h2{
-        font: var(--title-reponsive);
-    }
-    .name > picture{
-        padding: var(--padding-nav);
-    }
-    
     body{
         font: var(--body-responsive);
     }
@@ -234,5 +224,26 @@ a > h3:hover{
     
     h2{
         font: 1.5em var(--title);
+    }
+
+    .name{
+        flex-direction: column-reverse;
+        height: 50vh;
+    }
+    .name > h2{
+        font: var(--title-reponsive);
+    }
+    .name > picture{
+        padding: var(--padding-nav);
+    }
+
+    .card{
+        height: 70px;
+        width: 95px;
+        font: var(--text-responsive);
+        display: flex;
+    }
+    .card-about > h2, p{
+        visibility: hidden;
     }
 }

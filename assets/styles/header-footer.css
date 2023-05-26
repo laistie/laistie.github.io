@@ -13,7 +13,7 @@ nav{
     background-color: var(--black);
     padding: var(--padding1);
     position: fixed;
-    width: 100%;
+    width: 100vh;
 }
 nav > a{
     text-decoration: none;
@@ -50,7 +50,7 @@ a.current{
 }
 #socials{
     padding: var(--padding);
-    width: 100%;
+    width: 100vh;
     position: absolute;
     bottom: 0;
 }
@@ -71,8 +71,5 @@ h4{
     }
     h4{
         font: 1em var(--title)
-    }
-    #footmark {
-        font: var(--footmark-responsive)
     }
 }
