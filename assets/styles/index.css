@@ -238,12 +238,10 @@ a > h3:hover{
     }
 
     .card{
-        height: 70px;
-        width: 95px;
-        font: var(--text-responsive);
-        display: flex;
+        all: unset;
     }
-    .card-about > h2, p{
-        visibility: hidden;
+
+    .card-about > p{
+        visibility: visible;
     }
 }
