@@ -27,6 +27,7 @@ body{
     align-content: center;
     margin: var(--margin-text);
 }
+
 header{
     font: var(--header);
     background-color: var(--black);
@@ -35,25 +36,31 @@ header{
     border-radius: var(--round);
     text-align: center;
 }
+
 main{
     background-color: white;
     color: black;
     text-align: justify;
 }
+
 .section{
     border-bottom: var(--line) var(--black);
 }
+
 p{
     text-indent: var(--indent);
 }
+
 .italic{
     font-style: italic;
     color: var(--purple);
 }
+
 table{
     width: 100%;
     text-align: center;
 }
+
 td{
     width: 50%;
     color: white;
@@ -61,6 +68,7 @@ td{
     padding: var(--padding-table);
     border: var(--line);
 }
+
 img{
     display: block;
     margin-left: auto;
@@ -68,10 +76,12 @@ img{
     margin-bottom: 1em;
     width: 25%;
 }
+
 .references > p , #tests > p{
     text-indent: 0em;
     text-align: left;
 }
+
 .link:link , .link:visited , .link:active{
     color: var(--purple);
     text-decoration: none;
@@ -80,16 +90,19 @@ img{
     color: var(--lilac);
     text-decoration: underline;
 }
+
 footer > p{   
     text-indent: 0;
     text-align: center;
 }
+
 @media (max-width: 768px){
     body{
         font: var(--text-responsive);
         align-content: center;
         margin: var(--margin-responsive);
     }
+
     header{
         font: var(--header);
     }
