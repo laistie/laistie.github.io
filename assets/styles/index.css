@@ -157,7 +157,7 @@ a > h3:hover{
     width: 350px;
     box-shadow: 5px 5px 15px var(--lilac);
     overflow: hidden;
-    margin-top: var(--margin2);
+    margin: var(--margin2);
 }
 .card > a{
     color: white;
@@ -199,14 +199,18 @@ a > h3:hover{
 }
 
 ::-webkit-scrollbar{
-    width: .5em;
-    border-radius: var(--round);
+    width: 10px;
 }
 ::-webkit-scrollbar-track{
     background: var(--black);
+    border-radius: var(--round);
 }
 ::-webkit-scrollbar-thumb{
     background: var(--purple);
+    border-radius: var(--round);
+}
+::-webkit-scrollbar-thumb:hover{
+    background: var(--lilac);
 }
 
 @media (max-width: 640px){
