@@ -37,7 +37,7 @@
 
     --round: 9px;
 
-    --timer: all 0.5s ease;
+    --timer: all 0.5s ease-in-out;
 
     --line: 0.01em solid;
 
@@ -49,7 +49,6 @@ body{
     background-color: var(--black);
     color: white;
     font: var(--body);
-    align-content: center;
     text-align: center;
     line-height: var(--line-height);
     position: relative;
@@ -64,7 +63,7 @@ body{
 
 .flex-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -137,25 +136,32 @@ a > h3:hover{
     color: white;
 }
 
-.short{
+.box{
     display: flex;
-    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
+    padding: 15px;
+    height: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.short-date{
-    margin-top: 0;
-    color: var(--lilac);
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px var(--lilac);
+    transition: var(--timer);
 }
 
-.short-text{
-    margin-top: 0;
-    margin-left: var(--margin2);
+.skill{
+    padding: var(--padding);
+    margin: var(--margin-menu);
 }
 
 .card{
     height: 250px;
     width: 350px;
-    box-shadow: 5px 5px 15px var(--lilac);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     margin: var(--margin2);
 }
@@ -166,7 +172,7 @@ a > h3:hover{
     cursor: pointer;
 }
 .card:hover .card-about{
-    height: 150px;
+    height: 175px;
     background: var(--black);
 }
 .card:hover h2{
@@ -176,16 +182,12 @@ a > h3:hover{
     visibility: visible;
 }
 
-.card-img{
-    border-radius: var(--round);
-}
-
 .card-about{
-    height: 75px;
+    height: 100px;
     width: 350px;
     box-sizing: border-box;
     position: absolute;
-    bottom: 45vh;
+    bottom: 32vh;
     background-color: var(--black-rbg-75);
     transition: var(--timer);
 }
@@ -194,7 +196,7 @@ a > h3:hover{
 }
 .card-about > p{
     font: var(--card-text);
-    margin: var(--margin1);
+    margin: var(--margin-menu);
     visibility: hidden;
 }
 
@@ -203,11 +205,9 @@ a > h3:hover{
 }
 ::-webkit-scrollbar-track{
     background: var(--black);
-    border-radius: var(--round);
 }
 ::-webkit-scrollbar-thumb{
     background: var(--purple);
-    border-radius: var(--round);
 }
 ::-webkit-scrollbar-thumb:hover{
     background: var(--lilac);

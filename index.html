@@ -16,41 +16,66 @@
             <nav>
                 <a class = "current" href = "index.html" target = "_self" rel = next> home </a>
                 <a href = "curriculum.html" target = "_blank" rel = next> curriculum </a> 
-                <a href = "projects.html" target = "_self" rel = next> projects </a>
                 <a href = "posts.html" target = "_self" rel = next > posts </a>
             </nav>
         </header>
         
         <main>
-            <div id = "content">
-                <div class = "name">
-                    <h2> Laís Tie Takaki </h2>
+            <div id="content">
+                <div class="name">
+                    <h2>Laís Tie Takaki</h2>
                     <picture class="pic">
                         <source srcset = "assets/images/picM.png" media = "(max-width: 1007px)">
                         <img srcset = "assets/images/pic.png" alt = "pic">
                     </picture>
                 </div>
-                <div class = "content">
-                    <h1> welcome </h1>
-                    <div class = "description">
-                        <h2> <mark> what's this? </mark> </h2>
-                            <p> The main purpose of this website is to develop my coding skills, although its content, as for now, won't be focused on formal projects; but if you want to check some of my university projects, you should take a look at my github profile, which is linked down below the socials section, or directly <a href="https://github.com/laistie/uni-projects" target="_blank" rel="next">here</a>. </p>
-                        <h2> <mark> a little about me </mark> </h2>
-                            <p> I'm a 6th semester undergraduate student of computer science at Universidade Estadual de Londrina (UEL). Even though I've had lots of fun designing this website from scratch, I've been into back-end development ever since I started working on my university educational project. </p>
-                            <p> In my spare time, I appreciate studing foreign languages and I've been keen on games since I was little, so I usually spend lots of time playing cozy games, such as Stardew Valley, and some competitive ones, like Valorant, with my friends. </p>
+                <h1>welcome</h1>
+                <p>The main purpose of this website is to develop my coding skills, although its content, as for now, won't be focused on formal projects; but if you want to check some of my university projects, you should take a look at my github profile, which is linked down below the socials section, or directly <a href="https://github.com/laistie/uni-projects" target="_blank" rel="next">here</a>.</p>
+                <div class="flex-container">
+                    <div class="box">
+                        <h2><mark>about me</mark></h2>
+                        <p>I'm a 8th semester undergraduate student of computer science at Universidade Estadual de Londrina (UEL). Even though I've had lots of fun designing this website from scratch - this was before going to uni -, I've been into back-end development ever since I started working on my university educational project.</p>
+                    </div>
+                    <div class="box">
+                        <h2><mark>skills</mark></h2>
+                        <div class="flex-container">
+                            <img src="assets/images/C.ico" alt="C" class="skill">
+                            <img src="assets/images/Java.ico" alt="Java" class="skill">
+                            <img src="assets/images/JS.ico" alt="JS" class="skill">
+                            <img src="assets/images/SQL.ico" alt="SQL" class="skill">
+                            <img src="assets/images/Python.ico" alt="Python" class="skill">
+                        </div>
+                    </div>
+                </div>
+                <h1>projects</h1>
+                <div class="flex-container">
+                    <div class="card">
+                        <image class="card-img" src="./assets/images/Hit-or-Stand.png" alt="Hit or Stand">
+                        <a href="https://github.com/laistie/Hit-or-Stand" target="_blank" rel="external"> 
+                            <div class="card-about">
+                                <h2> Hit or Stand </h2>
+                                <p> A mobile app developed in React Native to count cards in Blackjack. </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <image class="card-img" src="./assets/images/crypto-project.png" alt="Crypto project">
+                        <a href="https://github.com/laistie/db-crypto-project" target="_blank" rel="external">
+                            <div class="card-about">
+                                <h2>Crypto project</h2>
+                                <p>Database uni project developed with my friend. We've used Java and with Spring Boot framework to track cryptocurrencies and check markets' status using DAO implementation and JS in the front-end.</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div id = "socials">
+            <div id="socials">
                 <ul>
-                <li class = "button button-socials">
-                    <a href = "https://github.com/laistie" target = "_blank" rel = external> <img src = "assets/images/github.ico"> </a>
+                <li class="button button-socials">
+                    <a href="https://github.com/laistie" target="_blank" rel=external><img src="assets/images/github.ico"> </a>
                 </li>
-                <li class = "button button-socials">
-                    <a href = "https://www.instagram.com/aeiltsi/" target = "_blank" rel = external> <img src = "assets/images/instagram.ico"> </a>
-                </li>
-                <li class = "button button-socials">
-                    <a href = "https://www.linkedin.com/in/la%C3%ADs-tie-takaki-326160235" target = "_blank" rel = external> <img src = "assets/images/linkedin.ico"> </a>
+                <li class="button button-socials">
+                    <a href="https://www.linkedin.com/in/la%C3%ADs-tie-takaki-326160235" target="_blank" rel=external> <img src="assets/images/linkedin.ico"></a>
                 </li>
                 </ul>
             </div>

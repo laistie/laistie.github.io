@@ -4,10 +4,11 @@
 header{
     display: flex;
     flex-direction: row;
+    position: sticky;
     align-items: center;
     justify-content: center;
     letter-spacing: var(--letter-spacing);
-    margin: var(--margin-text);
+    padding: var(--padding1);
 }
 nav{
     background-color: var(--black);
